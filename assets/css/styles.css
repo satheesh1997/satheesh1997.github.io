@@ -373,7 +373,7 @@ a.dotted-link:hover {
 
 /* Git section */
 .github-graph {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .github-graph .js-calendar-graph-svg {
@@ -672,4 +672,12 @@ a.dotted-link:hover {
     width: 1360px;
     max-width: inherit;
   }
+}
+
+.gha-header {
+  display: none !important;
+}
+
+.gha-push {
+    height: 0 !important;
 }

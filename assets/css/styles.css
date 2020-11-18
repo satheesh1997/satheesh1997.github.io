@@ -681,3 +681,11 @@ a.dotted-link:hover {
 .gha-push {
     height: 0 !important;
 }
+
+.gha-push-small {
+    height: 0px
+}
+
+.gha-footer {
+  display: none !important;
+}

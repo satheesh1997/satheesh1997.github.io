@@ -1,3 +1,52 @@
 * {
   margin: 0;
 }
+
+body {
+  background: #dae3e7 !important;
+}
+
+.topheader__logo {
+  height: 182px;
+  border-radius: 50%;
+}
+
+.topheader__header-name {
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  margin-bottom: 5px !important;
+}
+
+.topheader__header-title {
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+}
+
+.topheader__header-title::before {
+  height: 0 !important;
+}
+
+.topheader__social-list {
+  padding: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.topheader__social-list-button {
+  display: inline-block !important;
+  margin-right: 10px !important;
+  padding: 0 !important;
+  padding-top: 7px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  text-align: center !important;
+  background-clip: padding-box !important;
+}
+
+.topheader__social-list-item-btn-icon {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+}

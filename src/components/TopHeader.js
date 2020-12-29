@@ -32,13 +32,23 @@ function TopHeader({ props }) {
   };
 
   return (
-    <Segment placeholder>
+    <Segment placeholder className="topheader">
       <Grid divided="vertically">
         <Grid.Row columns={3}>
-          <Grid.Column className="topheader__column-left">
+          <Grid.Column
+            className="topheader__column-left"
+            mobile={16}
+            tablet={8}
+            computer={3}
+          >
             <img src={Logo} alt={user.name} className="topheader__logo" />
           </Grid.Column>
-          <Grid.Column className="topheader__column-center">
+          <Grid.Column
+            className="topheader__column-center"
+            mobile={16}
+            tablet={8}
+            computer={9}
+          >
             <Header as="h1" className="topheader__header-name">
               {user.name}
             </Header>
@@ -57,8 +67,17 @@ function TopHeader({ props }) {
                 })}
             </Container>
           </Grid.Column>
-          <Grid.Column className="topheader__column-right">
-            <Button secondary onClick={openContactForm}>
+          <Grid.Column
+            className="topheader__column-right"
+            mobile={16}
+            tablet={8}
+            computer={4}
+          >
+            <Button
+              secondary
+              onClick={openContactForm}
+              className="topheader__connect_btn"
+            >
               <Icon name="paper plane" />
               &nbsp; Contact
             </Button>

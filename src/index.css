@@ -6,6 +6,17 @@ body {
   background: #dae3e7 !important;
 }
 
+.ui.container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.topheader {
+  padding: 50px !important;
+}
+
 .topheader__logo {
   height: 182px;
   border-radius: 50%;
@@ -15,6 +26,7 @@ body {
   font-size: 38px !important;
   font-weight: 700 !important;
   margin-bottom: 5px !important;
+  margin-top: 25px !important;
 }
 
 .topheader__header-title {
@@ -49,4 +61,24 @@ body {
   font-size: 20px !important;
   font-weight: 800 !important;
   margin: 0 !important;
+}
+
+.topheader__connect_btn {
+  margin-top: 70px !important;
+}
+
+.topheader__column-right {
+  text-align: right !important;
+}
+
+.homepage {
+  padding: 50px !important;
+}
+
+.recent_article {
+  text-align: center !important;
+}
+
+.skill_container {
+  padding-bottom: 5px !important;
 }

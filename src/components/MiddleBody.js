@@ -11,12 +11,15 @@ import Institutions from "./Institutions";
 import Languages from "./Languages";
 
 function MiddleContainer({ props }) {
+  const segmentColors = ["red", "green", "blue", "orange", "black"];
+  const segmentColor =
+    segmentColors[Math.floor(Math.random() * segmentColors.length)];
   return (
     <Grid columns={2} className="homepage">
       <Grid.Row>
         <Grid.Column mobile={16} tablet={8} computer={11}>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               About
             </Label>
             <Container>
@@ -24,7 +27,7 @@ function MiddleContainer({ props }) {
             </Container>
           </Segment>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Articles
             </Label>
             <RecentArticle
@@ -33,45 +36,45 @@ function MiddleContainer({ props }) {
             />
           </Segment>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Experiences
             </Label>
             <Experiences />
           </Segment>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Contributions
             </Label>
-            <Contributions />
+            <Contributions github_username={props.user.github_username} />
           </Segment>
         </Grid.Column>
         <Grid.Column mobile={16} tablet={8} computer={5}>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Contact
             </Label>
             <ContactDetails />
           </Segment>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Skills
             </Label>
             <Skills />
           </Segment>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Testimonials
             </Label>
             <Testimonials />
           </Segment>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Institutions
             </Label>
             <Institutions />
           </Segment>
           <Segment raised>
-            <Label as="a" color="red" ribbon>
+            <Label as="a" color={segmentColor} ribbon>
               Languages
             </Label>
             <Languages />

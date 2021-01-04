@@ -1,7 +1,8 @@
 import React from "react";
-import { Container } from "semantic-ui-react";
+import { Container, Header } from "semantic-ui-react";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
+import GithubPinned from "./GithubPinned";
 
 const gitHubCalendarTheme = {
   background: "transparent",
@@ -13,17 +14,19 @@ const gitHubCalendarTheme = {
   grade0: "#eee",
 };
 
-function Contributions() {
+function Contributions({ github_username }) {
   return (
     <Container>
       <GitHubCalendar
-        username="satheesh1997"
+        username={github_username}
         blockSize={15}
         blockMargin={8}
         theme={gitHubCalendarTheme}
       >
         <ReactTooltip delayShow={50} html />
       </GitHubCalendar>
+      <Header as="h3" content="Projects" />
+      <GithubPinned username={github_username} />
     </Container>
   );
 }

@@ -12,6 +12,7 @@ function App() {
       articles_url: "https://articles.satheesh.dev/",
       about: `I am a Software Developer skilled in Python, Django, Flask, Java, and JavaScript. 
         A strong engineering professional with a Bachelor of Engineering focused in Computer Science and strong engineering experience from HackerEarth.`,
+      github_username: "satheesh1997",
     },
     socials: [
       {

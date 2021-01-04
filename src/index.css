@@ -115,6 +115,10 @@ body {
   color: white;
 }
 
+.githubpinned__item-star {
+  float: right !important;
+}
+
 i.icon {
   font-family: Icons !important;
 }

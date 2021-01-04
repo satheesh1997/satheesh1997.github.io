@@ -5,20 +5,29 @@ function ContactDetails() {
   return (
     <Container>
       <List>
-        <List.Item>
-          <List.Icon name="address book" />
+        <List.Item className="contact-details__list-item">
+          <List.Icon
+            name="address book"
+            className="contact-details__list-item-icon "
+          />
           <List.Content>+91-9597264229</List.Content>
         </List.Item>
-        <List.Item>
-          <List.Icon name="mail" />
+        <List.Item className="contact-details__list-item">
+          <List.Icon name="mail" className="contact-details__list-item-icon " />
           <List.Content>mail@satheesh.dev</List.Content>
         </List.Item>
-        <List.Item>
-          <List.Icon name="globe" />
+        <List.Item className="contact-details__list-item">
+          <List.Icon
+            name="globe"
+            className="contact-details__list-item-icon "
+          />
           <List.Content>https://satheesh.dev/</List.Content>
         </List.Item>
-        <List.Item>
-          <List.Icon name="marker" />
+        <List.Item className="contact-details__list-item">
+          <List.Icon
+            name="marker"
+            className="contact-details__list-item-icon "
+          />
           <List.Content>Bengaluru, India</List.Content>
         </List.Item>
       </List>

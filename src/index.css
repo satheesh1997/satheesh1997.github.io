@@ -15,7 +15,10 @@ body {
 }
 
 .topheader {
-  padding: 50px !important;
+  padding-top: 35px !important;
+  padding-bottom: 15px !important;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
 }
 
 .topheader__logo {
@@ -41,7 +44,7 @@ body {
   height: 0 !important;
 }
 
-.topheader__social-list {
+.ui.container.topheader__social-list {
   padding: 0 !important;
   margin-bottom: 1rem !important;
 }
@@ -73,8 +76,18 @@ body {
   text-align: right !important;
 }
 
+.contact-details__list-item {
+  line-height: 25px !important;
+}
+
+.contact-details__list-item-icon {
+  line-height: 20px !important;
+}
+
 .homepage {
-  padding: 50px !important;
+  padding: 100px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
 
 .recent_article {
@@ -83,6 +96,23 @@ body {
 
 .skill_container {
   padding-bottom: 5px !important;
+}
+
+.institutions__list-item {
+  line-height: 38px !important;
+}
+
+.languages__rating {
+  margin-top: 5px !important;
+}
+
+.bottomfooter {
+  background-color: #1b1c1d;
+  width: 100vw !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0px !important;
+  color: white;
 }
 
 i.icon {

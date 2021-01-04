@@ -1,4 +1,5 @@
 import React from "react";
+import BottomFooter from "./components/BottomFooter";
 import MiddleBody from "./components/MiddleBody";
 import TopHeader from "./components/TopHeader";
 
@@ -43,6 +44,7 @@ function App() {
     <div className="app">
       <TopHeader props={props} />
       <MiddleBody props={props} />
+      <BottomFooter props={props} />
     </div>
   );
 }

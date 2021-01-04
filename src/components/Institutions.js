@@ -5,7 +5,7 @@ function Institutions() {
   return (
     <Container>
       <List>
-        <List.Item>
+        <List.Item className="institutions__list-item">
           <List.Icon name="graduation cap" />
           <List.Content>
             <List.Header as="h5">Amrita Vidyalayam</List.Header>
@@ -14,7 +14,7 @@ function Institutions() {
             </List.Description>
           </List.Content>
         </List.Item>
-        <List.Item>
+        <List.Item className="institutions__list-item">
           <List.Icon name="graduation cap" />
           <List.Content>
             <List.Header as="h5">Sri Krishna College of Technology</List.Header>

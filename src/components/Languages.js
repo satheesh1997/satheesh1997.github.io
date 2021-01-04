@@ -8,16 +8,16 @@ function Languages() {
         <List.Item>
           <List.Content>
             <List.Header as="h5">English</List.Header>
-            <List.Description>
-              <Rating maxRating={5} defaultRating={4} icon="star" size="huge" />
+            <List.Description className="languages__rating">
+              <Rating maxRating={5} defaultRating={4} size="medium" disabled />
             </List.Description>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
             <List.Header as="h5">Tamil</List.Header>
-            <List.Description>
-              <Rating maxRating={5} defaultRating={5} icon="star" size="huge" />
+            <List.Description className="languages__rating">
+              <Rating maxRating={5} defaultRating={5} size="medium" disabled />
             </List.Description>
           </List.Content>
         </List.Item>

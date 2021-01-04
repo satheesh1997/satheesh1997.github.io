@@ -57,11 +57,12 @@ function TopHeader({ props }) {
             </Header>
             <Container className="topheader__social-list">
               {socials &&
-                socials.map((social) => {
+                socials.map((social, key) => {
                   return (
                     <TopHeaderIcon
                       name={social.name}
                       onClickRedirect={social.url}
+                      key={key}
                     />
                   );
                 })}

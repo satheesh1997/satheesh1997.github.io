@@ -9,7 +9,7 @@ function Languages() {
           <List.Content>
             <List.Header as="h5">English</List.Header>
             <List.Description className="languages__rating">
-              <Rating maxRating={5} defaultRating={4} size="medium" disabled />
+              <Rating maxRating={5} defaultRating={4} size="small" disabled />
             </List.Description>
           </List.Content>
         </List.Item>
@@ -17,7 +17,7 @@ function Languages() {
           <List.Content>
             <List.Header as="h5">Tamil</List.Header>
             <List.Description className="languages__rating">
-              <Rating maxRating={5} defaultRating={5} size="medium" disabled />
+              <Rating maxRating={5} defaultRating={5} size="small" disabled />
             </List.Description>
           </List.Content>
         </List.Item>

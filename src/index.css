@@ -120,6 +120,15 @@ ul.ui.list li {
   cursor: pointer !important;
 }
 
+.read-more-button {
+  color: blue;
+  margin-top: 10px;
+}
+
+.read-more-button:hover {
+  cursor: pointer;
+}
+
 .institutions__list-item {
   line-height: 38px !important;
 }

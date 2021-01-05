@@ -1,10 +1,8 @@
 import React from "react";
 import { Container, Item } from "semantic-ui-react";
+import ReadMoreReact from "read-more-react";
 
 function Testimonial({ testimonial }) {
-  const truncate = (str) => {
-    return str.length > 150 ? str.substring(0, 140) + "..." : str;
-  };
   const openLinkedin = () => {
     window.open(testimonial.linkedin, "_blank");
   };
@@ -19,7 +17,15 @@ function Testimonial({ testimonial }) {
             {testimonial.role}, {testimonial.company}
           </span>
         </Item.Meta>
-        <Item.Description>{truncate(testimonial.content)}</Item.Description>
+        <Item.Description>
+          <ReadMoreReact
+            text={testimonial.content}
+            min={150}
+            ideal={170}
+            max={300}
+            readMoreText="more ..."
+          />
+        </Item.Description>
       </Item.Content>
     </Item>
   );

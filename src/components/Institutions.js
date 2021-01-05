@@ -1,28 +1,27 @@
 import React from "react";
 import { Container, List } from "semantic-ui-react";
 
-function Institutions() {
+function Institution({ institution }) {
+  return (
+    <List.Item className="institutions__list-item">
+      <List.Icon name="graduation cap" />
+      <List.Content>
+        <List.Header as="h5">{institution.name}</List.Header>
+        <List.Description>
+          {institution.degree} ({institution.year})
+        </List.Description>
+      </List.Content>
+    </List.Item>
+  );
+}
+
+function Institutions({ institutions }) {
   return (
     <Container>
       <List>
-        <List.Item className="institutions__list-item">
-          <List.Icon name="graduation cap" />
-          <List.Content>
-            <List.Header as="h5">Amrita Vidyalayam</List.Header>
-            <List.Description>
-              Secondary & Higher Secondary (2005-2015)
-            </List.Description>
-          </List.Content>
-        </List.Item>
-        <List.Item className="institutions__list-item">
-          <List.Icon name="graduation cap" />
-          <List.Content>
-            <List.Header as="h5">Sri Krishna College of Technology</List.Header>
-            <List.Description>
-              B.E Computer Science (2015-2019)
-            </List.Description>
-          </List.Content>
-        </List.Item>
+        {institutions.map((institution, key) => {
+          return <Institution institution={institution} key={key} />;
+        })}
       </List>
     </Container>
   );

@@ -36,7 +36,7 @@ function MiddleContainer({ props }) {
             <Label as="a" color={props.color} ribbon>
               Experiences
             </Label>
-            <Experiences />
+            <Experiences experiences={props.experiences} />
           </Segment>
           <Segment raised>
             <Label as="a" color={props.color} ribbon>
@@ -50,7 +50,7 @@ function MiddleContainer({ props }) {
             <Label as="a" color={props.color} ribbon>
               Contact
             </Label>
-            <ContactDetails />
+            <ContactDetails details={props.contact_details} />
           </Segment>
           <Segment raised>
             <Label as="a" color={props.color} ribbon>
@@ -68,13 +68,13 @@ function MiddleContainer({ props }) {
             <Label as="a" color={props.color} ribbon>
               Institutions
             </Label>
-            <Institutions />
+            <Institutions institutions={props.institutions} />
           </Segment>
           <Segment raised>
             <Label as="a" color={props.color} ribbon>
               Languages
             </Label>
-            <Languages />
+            <Languages languages={props.languages} />
           </Segment>
         </Grid.Column>
       </Grid.Row>

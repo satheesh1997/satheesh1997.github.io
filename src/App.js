@@ -34,6 +34,12 @@ function App() {
         url: "https://github.com/satheesh1997",
       },
     ],
+    contact_details: {
+      mobile: "+91-9597264229",
+      mail: "mail@satheesh.dev",
+      web: "https://satheesh.dev/",
+      location: "Bengaluru, India",
+    },
     recent_article: {
       image: "https://miro.medium.com/max/700/1*RXEDFVThZhVfOmvSpG5LXw.jpeg",
       title: "How to build a simple bot using python?",
@@ -42,6 +48,23 @@ function App() {
       back a response(eg. Slack Bot, Messenger Bot). To build this
       kind of simple bots I have created a framework called iaBot.`,
     },
+    experiences: [
+      {
+        role: "Software Engineer",
+        employeer: "HackerEarth",
+        year: "2019 - Present",
+        description:
+          "Working as a Software Engineer in Core apps team which maintains the HackerEarth Assessment & FaceCode product.",
+      },
+      {
+        role: "Engineering Intern",
+        employeer: "HackerEarth",
+        year: "2018 - 2019",
+        description: `Worked in b2b team as an engineering intern. Have worked on many
+        engineering driven tasks & also have made nearly 80+ commits at
+        the end.`,
+      },
+    ],
     testimonials: [
       {
         name: "Deepak Mishra",
@@ -55,11 +78,33 @@ function App() {
       },
       {
         name: "Vijay Chintala",
-        role: "Software Engineer",
-        company: "Rubrik, Inc",
+        role: "Staff Software Engineer",
+        company: "HackerEarth",
         content: `I have known satheesh for more than a year and half in the professional industry, he is organized and dedicated to his projects.
         Recently, i worked together with satheesh on the integration of csharp and python project type questions, His work ethics has inspired not just me but others around us too.`,
         linkedin: "https://www.linkedin.com/in/vijay-chintala/",
+      },
+    ],
+    institutions: [
+      {
+        name: "Amrita Vidyalayam",
+        degree: "Secondary & Higher Secondary",
+        year: "2005-2015",
+      },
+      {
+        name: "Sri Krishna College of Technology",
+        degree: "B.E, Computer Science",
+        year: "2015-2019",
+      },
+    ],
+    languages: [
+      {
+        name: "English",
+        rating: 4,
+      },
+      {
+        name: "Tamil",
+        rating: 5,
       },
     ],
   };

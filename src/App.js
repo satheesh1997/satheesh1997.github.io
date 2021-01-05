@@ -4,7 +4,7 @@ import MiddleBody from "./components/MiddleBody";
 import TopHeader from "./components/TopHeader";
 
 function App() {
-  const randomColors = ["red", "orange", "violet", "purple", "pink"];
+  const randomColors = ["red", "violet", "purple", "pink"];
   const props = {
     color: randomColors[Math.floor(Math.random() * randomColors.length)],
     user: {

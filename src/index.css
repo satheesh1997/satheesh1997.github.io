@@ -14,6 +14,24 @@ body {
   padding-bottom: 20px !important;
 }
 
+.ui.list .list > .item,
+.ui.list > .item,
+ol.ui.list li,
+ul.ui.list li {
+  display: list-item;
+  table-layout: fixed;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0.21428571em 0;
+  line-height: 1.14285714em;
+  padding-bottom: 20px !important;
+}
+
+.ui.items > .item {
+  font-size: 1em;
+  padding-bottom: 10px !important;
+}
+
 .topheader {
   padding-top: 35px !important;
   padding-bottom: 15px !important;
@@ -96,6 +114,10 @@ body {
 
 .skill_container {
   padding-bottom: 5px !important;
+}
+
+.testimonial__user:hover {
+  cursor: pointer !important;
 }
 
 .institutions__list-item {

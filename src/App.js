@@ -42,6 +42,26 @@ function App() {
       back a response(eg. Slack Bot, Messenger Bot). To build this
       kind of simple bots I have created a framework called iaBot.`,
     },
+    testimonials: [
+      {
+        name: "Deepak Mishra",
+        role: "Engineering Manager",
+        company: "HackerEarth",
+        content: `Satheesh is a rare breed of engineer who has far more technical expertise than his experience. For around one year experienced, he takes a lot of responsibilities and does well in all of them. He is one of the junior-most team members, but he gives his teammates a run for the money.
+        Currently, Satheesh is working on a super challenging feature. He has already done the MVP of the next one. When I asked him to try, he was like "I already tried and it works". That's why he became THE ENGINEER OF THE YEAR.
+        Satheesh is very hardworking. He is the most approachable person for every other issue or knowhows for not just engineering team. He is dependable and his words can be trusted. He has the attitude of getting the work done and unblocking anyone dependent on him ASAP. By words of his peers, he knows everything and can do anything. He has grown a lot over the past year.
+        On the face, everyone fights with him, but they love him. He is a sweetheart. He is the BRO of the team.`,
+        linkedin: "https://www.linkedin.com/in/deepakmishra117/",
+      },
+      {
+        name: "Vijay Chintala",
+        role: "Software Engineer",
+        company: "Rubrik, Inc",
+        content: `I have known satheesh for more than a year and half in the professional industry, he is organized and dedicated to his projects.
+        Recently, i worked together with satheesh on the integration of csharp and python project type questions, His work ethics has inspired not just me but others around us too.`,
+        linkedin: "https://www.linkedin.com/in/vijay-chintala/",
+      },
+    ],
   };
   return (
     <div className="app">

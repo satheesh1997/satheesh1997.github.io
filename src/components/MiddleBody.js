@@ -62,7 +62,7 @@ function MiddleContainer({ props }) {
             <Label as="a" color={props.color} ribbon>
               Testimonials
             </Label>
-            <Testimonials />
+            <Testimonials testimonials={props.testimonials} />
           </Segment>
           <Segment raised>
             <Label as="a" color={props.color} ribbon>

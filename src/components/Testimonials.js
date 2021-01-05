@@ -1,25 +1,37 @@
 import React from "react";
 import { Container, Item } from "semantic-ui-react";
 
-function Testimonials() {
+function Testimonial({ testimonial }) {
+  const truncate = (str) => {
+    return str.length > 150 ? str.substring(0, 140) + "..." : str;
+  };
+  const openLinkedin = () => {
+    window.open(testimonial.linkedin, "_blank");
+  };
+  return (
+    <Item>
+      <Item.Content>
+        <Item.Header onClick={openLinkedin} className="testimonial__user">
+          {testimonial.name}
+        </Item.Header>
+        <Item.Meta onClick={openLinkedin} className="testimonial__user">
+          <span className="price">
+            {testimonial.role}, {testimonial.company}
+          </span>
+        </Item.Meta>
+        <Item.Description>{truncate(testimonial.content)}</Item.Description>
+      </Item.Content>
+    </Item>
+  );
+}
+
+function Testimonials({ testimonials }) {
   return (
     <Container>
       <Item.Group>
-        <Item>
-          <Item.Content>
-            <Item.Header>Deepak Mishra</Item.Header>
-            <Item.Meta>
-              <span className="price">Engineering Manager, HackerEarth</span>
-            </Item.Meta>
-            <Item.Description>
-              Satheesh is a rare breed of engineer who has far more technical
-              expertise than his experience. For around one year experienced, he
-              takes a lot of responsibilities and does well in all of them. He
-              is one of the junior-most team members, but he gives his teammates
-              a run for the money...
-            </Item.Description>
-          </Item.Content>
-        </Item>
+        {testimonials.map((testimonial, key) => {
+          return <Testimonial testimonial={testimonial} key={key} />;
+        })}
       </Item.Group>
     </Container>
   );

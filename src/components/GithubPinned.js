@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Card, Icon } from "semantic-ui-react";
+import { Card, Icon, Placeholder } from "semantic-ui-react";
 
 function GithubPinnedItem({ title, description, stars, language, url }) {
   const openRepo = () => {
@@ -35,22 +35,33 @@ function GithubPinned({ username }) {
       .then((data) => setPinnedRepos(data));
   }, [username]);
 
-  return (
-    <Card.Group itemsPerRow={3}>
-      {pinnedRepos.map((repo, key) => {
-        return (
-          <GithubPinnedItem
-            title={repo.repo}
-            description={repo.description}
-            stars={repo.stars}
-            language={repo.language}
-            url={`https://github.com/${repo.owner}/${repo.repo}/`}
-            key={key}
-          />
-        );
-      })}
-    </Card.Group>
-  );
+  if (pinnedRepos.length > 0) {
+    return (
+      <Card.Group itemsPerRow={3}>
+        {pinnedRepos.map((repo, key) => {
+          return (
+            <GithubPinnedItem
+              title={repo.repo}
+              description={repo.description}
+              stars={repo.stars}
+              language={repo.language}
+              url={`https://github.com/${repo.owner}/${repo.repo}/`}
+              key={key}
+            />
+          );
+        })}
+      </Card.Group>
+    );
+  } else {
+    return (
+      <Placeholder>
+        <Placeholder.Header>
+          <Placeholder.Line />
+          <Placeholder.Line />
+        </Placeholder.Header>
+      </Placeholder>
+    );
+  }
 }
 
 export default GithubPinned;

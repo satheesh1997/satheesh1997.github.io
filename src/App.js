@@ -47,6 +47,8 @@ function App() {
       which will do an action by processing the response and sending
       back a response(eg. Slack Bot, Messenger Bot). To build this
       kind of simple bots I have created a framework called iaBot.`,
+      url:
+        "https://articles.satheesh.dev/post/2020/how-to-build-a-simple-bot-using-python/",
     },
     experiences: [
       {

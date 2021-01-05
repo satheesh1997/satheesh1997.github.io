@@ -25,7 +25,7 @@ function MiddleContainer({ props }) {
           </Segment>
           <Segment raised>
             <Label as="a" color={props.color} ribbon>
-              Articles
+              Article
             </Label>
             <RecentArticle
               article={props.recent_article}

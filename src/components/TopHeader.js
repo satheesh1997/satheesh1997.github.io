@@ -27,8 +27,8 @@ const TopHeaderIcon = ({ name, onClickRedirect }) => {
 
 function TopHeader({ props }) {
   const { user, socials } = props;
-  const openContactForm = () => {
-    window.open(user.contact_form_url, "_blank");
+  const openArticles = () => {
+    window.open(user.articles_url, "_blank");
   };
 
   return (
@@ -76,11 +76,11 @@ function TopHeader({ props }) {
           >
             <Button
               secondary
-              onClick={openContactForm}
+              onClick={openArticles}
               className="topheader__connect_btn"
             >
               <Icon name="paper plane" />
-              &nbsp; Contact
+              &nbsp; Articles
             </Button>
           </Grid.Column>
         </Grid.Row>

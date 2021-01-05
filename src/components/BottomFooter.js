@@ -4,7 +4,8 @@ import { Container } from "semantic-ui-react";
 function BottomFooter() {
   return (
     <Container textAlign="center" className="bottomfooter">
-      © 2020 Satheesh Kumar - Powered by Semantic UI
+      © {new Date().getFullYear()} Satheesh Kumar - Powered by React & Semantic
+      UI
     </Container>
   );
 }

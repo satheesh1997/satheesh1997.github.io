@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { isMobile } from "react-device-detect";
 import { Card, Icon, Placeholder } from "semantic-ui-react";
 
 function GithubPinnedItem({ title, description, stars, language, url }) {
@@ -28,6 +28,7 @@ function GithubPinnedItem({ title, description, stars, language, url }) {
 
 function GithubPinned({ username }) {
   const [pinnedRepos, setPinnedRepos] = useState([]);
+  let itemsInRow = 3;
 
   useEffect(() => {
     fetch(`https://gh-pinned-repos.now.sh/?username=${username}`)
@@ -35,9 +36,14 @@ function GithubPinned({ username }) {
       .then((data) => setPinnedRepos(data));
   }, [username]);
 
+  if (isMobile) {
+    // if the device is mobile set item per row to 1
+    itemsInRow = 1;
+  }
+
   if (pinnedRepos.length > 0) {
     return (
-      <Card.Group itemsPerRow={3}>
+      <Card.Group itemsPerRow={itemsInRow}>
         {pinnedRepos.map((repo, key) => {
           return (
             <GithubPinnedItem

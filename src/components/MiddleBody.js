@@ -45,7 +45,12 @@ function MiddleContainer({ props }) {
             <Contributions github_username={props.user.github_username} />
           </Segment>
         </Grid.Column>
-        <Grid.Column mobile={16} tablet={8} computer={5}>
+        <Grid.Column
+          mobile={16}
+          tablet={8}
+          computer={5}
+          className="middlebody__second-column"
+        >
           <Segment raised>
             <Label as="a" color={props.color} ribbon>
               Contact

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Image, Header, Button } from "semantic-ui-react";
 
 function RecentArticle({ article }) {
-  const moreArticles = () => {
+  const readMore = () => {
     window.open(article.url, "_blank");
   };
   return (
@@ -10,7 +10,7 @@ function RecentArticle({ article }) {
       <Image src={article.image} centered />
       <Header as="h3" disabled content={article.title} />
       <p>{article.description}</p>
-      <Button basic color="black" size="tiny" onClick={moreArticles}>
+      <Button basic color="black" size="tiny" onClick={readMore}>
         Read More
       </Button>
     </Container>

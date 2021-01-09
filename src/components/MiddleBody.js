@@ -10,39 +10,39 @@ import Testimonials from "./Testimonials";
 import Institutions from "./Institutions";
 import Languages from "./Languages";
 
-function MiddleContainer({ props }) {
+function MiddleContainer({ data }) {
   return (
     <Grid columns={2} className="homepage">
       <Grid.Row>
         <Grid.Column mobile={16} tablet={8} computer={11}>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               About
             </Label>
             <Container>
-              <p>{props.user.about}</p>
+              <p>{data.user.about}</p>
             </Container>
           </Segment>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Article
             </Label>
             <RecentArticle
-              article={props.recent_article}
-              articles_url={props.user.articles_url}
+              article={data.recent_article}
+              articles_url={data.user.articles_url}
             />
           </Segment>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Experiences
             </Label>
-            <Experiences experiences={props.experiences} />
+            <Experiences experiences={data.experiences} />
           </Segment>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Contributions
             </Label>
-            <Contributions github_username={props.user.github_username} />
+            <Contributions github_username={data.user.github_username} />
           </Segment>
         </Grid.Column>
         <Grid.Column
@@ -52,34 +52,34 @@ function MiddleContainer({ props }) {
           className="middlebody__second-column"
         >
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Contact
             </Label>
-            <ContactDetails details={props.contact_details} />
+            <ContactDetails details={data.contact_details} />
           </Segment>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Skills
             </Label>
-            <Skills />
+            <Skills skills={data.skills} />
           </Segment>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Testimonials
             </Label>
-            <Testimonials testimonials={props.testimonials} />
+            <Testimonials testimonials={data.testimonials} />
           </Segment>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Institutions
             </Label>
-            <Institutions institutions={props.institutions} />
+            <Institutions institutions={data.institutions} />
           </Segment>
           <Segment raised>
-            <Label as="a" color={props.color} ribbon>
+            <Label as="a" color={data.color} ribbon>
               Languages
             </Label>
-            <Languages languages={props.languages} />
+            <Languages languages={data.languages} />
           </Segment>
         </Grid.Column>
       </Grid.Row>

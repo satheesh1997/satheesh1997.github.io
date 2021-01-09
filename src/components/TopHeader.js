@@ -25,8 +25,8 @@ const TopHeaderIcon = ({ name, onClickRedirect }) => {
   );
 };
 
-function TopHeader({ props }) {
-  const { user, socials } = props;
+function TopHeader({ data }) {
+  const { user, socials } = data;
   const openArticles = () => {
     window.open(user.articles_url, "_blank");
   };
@@ -50,7 +50,7 @@ function TopHeader({ props }) {
             computer={9}
           >
             <Header as="h1" className="topheader__header-name">
-              {user.name}
+              {user.name} {user.initial}
             </Header>
             <Header as="h1" disabled className="topheader__header-title">
               {user.title}

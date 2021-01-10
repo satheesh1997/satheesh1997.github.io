@@ -112,6 +112,11 @@ ul.ui.list li {
   text-align: center !important;
 }
 
+.recent_article__image {
+  max-width: 100% !important;
+  max-height: 500px !important;
+}
+
 .skill_container {
   padding-bottom: 5px !important;
 }

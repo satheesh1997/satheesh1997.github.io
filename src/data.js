@@ -41,14 +41,14 @@ const appData = {
     location: "Bengaluru, India",
   },
   recent_article: {
-    image: "https://miro.medium.com/max/700/1*RXEDFVThZhVfOmvSpG5LXw.jpeg",
-    title: "How to build a simple bot using python?",
-    description: `Nowadays there are small bots (simple software) that are running
-      which will do an action by processing the response and sending
-      back a response(eg. Slack Bot, Messenger Bot). To build this
-      kind of simple bots I have created a framework called iaBot.`,
+    image:
+      "https://i.ibb.co/HVhbHXm/screenshot-localhost-8000-1610268202874.png",
+    title: "How to access shell or shell based applications via internet?",
+    description: `Nowadays everything in becoming remote, In this article I will explain you how to access any shell or shell based applications on your system via internet.
+    To achieve this we will need to use a python package called Webpty.
+    This package is written using python and will allow us to share the shell or shell based applications via internet.`,
     url:
-      "https://articles.satheesh.dev/post/2020/how-to-build-a-simple-bot-using-python/",
+      "https://articles.satheesh.dev/post/2021/how-to-share-shell-via-internet/",
   },
   experiences: [
     {

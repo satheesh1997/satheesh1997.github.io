@@ -25,18 +25,18 @@ function MiddleContainer({ data }) {
           </Segment>
           <Segment raised>
             <Label as="a" color={data.color} ribbon>
-              Article
+              Experiences
+            </Label>
+            <Experiences experiences={data.experiences} />
+          </Segment>
+          <Segment raised>
+            <Label as="a" color={data.color} ribbon>
+              Latest
             </Label>
             <RecentArticle
               article={data.recent_article}
               articles_url={data.user.articles_url}
             />
-          </Segment>
-          <Segment raised>
-            <Label as="a" color={data.color} ribbon>
-              Experiences
-            </Label>
-            <Experiences experiences={data.experiences} />
           </Segment>
           <Segment raised>
             <Label as="a" color={data.color} ribbon>

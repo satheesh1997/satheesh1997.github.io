@@ -7,7 +7,7 @@ function RecentArticle({ article }) {
   };
   return (
     <Container className="recent_article">
-      <Image src={article.image} centered />
+      <Image src={article.image} centered className="recent_article__image" />
       <Header as="h3" disabled content={article.title} />
       <p>{article.description}</p>
       <Button basic color="black" size="tiny" onClick={readMore}>

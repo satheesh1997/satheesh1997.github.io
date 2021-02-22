@@ -5,11 +5,10 @@ const appData = {
   user: {
     name: "Satheesh Kumar",
     initial: "D",
-    title: "Software Developer",
+    title: "Software Engineer",
     contact_form_url: "https://contact.satheesh.dev/",
     articles_url: "https://articles.satheesh.dev/",
-    about: `I am a Software Developer skilled in Python, Django, Flask, Java, and JavaScript. 
-        A strong engineering professional with a Bachelor of Engineering focused in Computer Science and strong engineering experience from HackerEarth.`,
+    about: `Software Engineer skilled in Python, Django, Flask, Java, and JavaScript. A strong engineering professional with a Bachelor of Engineering focused in Computer Science and strong engineering experience from HackerEarth `,
     github_username: "satheesh1997",
   },
   socials: [
@@ -55,16 +54,31 @@ const appData = {
       role: "Software Engineer",
       employeer: "HackerEarth",
       year: "2019 - Present",
-      description:
-        "Working as a Software Engineer in Core apps team which maintains the HackerEarth Assessment & FaceCode product.",
+      description: "Building core applications",
+      contributions: [
+        "Contributed to new test overview interface along with 100% coverage",
+        "Contributed to full-stack problem type",
+        "Contributed to MVP of DevOps problem type",
+        "Contributed to the new invite flow revamp",
+        "Contributed to making the integration tests smoother",
+        "Contributed to upgrading the project question ide's to the latest version",
+      ],
     },
     {
       role: "Engineering Intern",
       employeer: "HackerEarth",
       year: "2018 - 2019",
-      description: `Worked in b2b team as an engineering intern. Have worked on many
-        engineering driven tasks & also have made nearly 80+ commits at
-        the end.`,
+      description: `Worked in building assessment product`,
+      contributions: [
+        "Contributed to making the output difference generation smoother & faster",
+        "Contributed to making the setter interface upgrades and extensions",
+        "Contributed to making Facecode an individual feature",
+        "Contributed to making JPQ available in the libraries",
+        "Contributed to making the internal utils of the application",
+        "Contributed to making the new developer API to cancel the invites",
+        "Contributed to making the integration of Hotjar in the product",
+        "Contributed to making content updates in the email templates and marketing pages",
+      ],
     },
   ],
   skills: [

@@ -108,6 +108,18 @@ ul.ui.list li {
   padding-bottom: 50px !important;
 }
 
+.experiences__contributions {
+  margin-top: 20px !important;
+}
+
+.experiences__contribution {
+  padding-bottom: 10px !important;
+}
+
+.experiences__contributiondots {
+  margin-top: -10px;
+}
+
 .recent_article {
   text-align: center !important;
 }

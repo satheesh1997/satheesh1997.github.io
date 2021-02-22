@@ -51,10 +51,17 @@ const appData = {
   },
   experiences: [
     {
+      role: "Senior Software Engineer",
+      employeer: "HackerEarth",
+      year: "2021 - Present",
+      description: "Building core applications",
+      contributions: [],
+    },
+    {
       role: "Software Engineer",
       employeer: "HackerEarth",
-      year: "2019 - Present",
-      description: "Building core applications",
+      year: "2019 - 2021",
+      description: "Worked in building core applications",
       contributions: [
         "Contributed to new test overview interface along with 100% coverage",
         "Contributed to full-stack problem type",
@@ -72,12 +79,9 @@ const appData = {
       contributions: [
         "Contributed to making the output difference generation smoother & faster",
         "Contributed to making the setter interface upgrades and extensions",
-        "Contributed to making Facecode an individual feature",
         "Contributed to making JPQ available in the libraries",
         "Contributed to making the internal utils of the application",
         "Contributed to making the new developer API to cancel the invites",
-        "Contributed to making the integration of Hotjar in the product",
-        "Contributed to making content updates in the email templates and marketing pages",
       ],
     },
   ],
